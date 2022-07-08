@@ -276,14 +276,17 @@ header{
 
 .caption-box-label {
     width: 100%;
-    padding: 27px 0;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     background-color: rgba(47, 48, 58, 0.8);
     position: absolute;
     bottom: 0;
 
     text-transform: uppercase;
     font-weight: 700;
-    text-align: center;
+    
     color: var(--color-txt);
 }
 
@@ -592,7 +595,7 @@ transition: box-shadow 250ms var(--timing-function);
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     
-    transform: translatey(100%);
+    transform: translatey(101%);
     transition: transform 250ms var(--timing-function);
 
 }
@@ -631,10 +634,17 @@ transition: box-shadow 250ms var(--timing-function);
     width: 30px;
     height: 30px;
     margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:var(--color-txt);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
+
+
+
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.5);
